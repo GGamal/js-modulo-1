@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js ejercicio 1</title>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        var metros = 0;
+        while (metros >= 0) {
+            metros =0;
+            metros = prompt("ingrese los metros recorridos")
+            if (metros >= 0 && metros <= 1000) {
+                alert("el medio de transporte es a pie");
+
+            }
+            if (metros > 1000 && metros <= 10000) {
+                alert("el medio de transporte es en bicicleta");
+
+            }
+            if (metros > 10000 && metros <= 30000) {
+                alert("el medio de transporte es en colectivo");
+
+            }
+            if (metros > 30000 && metros <= 100000) {
+                alert("el medio de transporte es en auto");
+
+            }
+            if (metros > 100000) {
+                alert("el medio de transporte es en avion");
+
+            }
+            if(metros < 0){
+                break;
+            }
+            
+        }
+
+        document.write("sali");
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arreglo = [3,10,5,7,20,15];
+        for (var j = 1; j < arreglo.length; j = j + 1) {
+            for (var i = 0; i < arreglo.length; i = i + 1) {
+                if (arreglo[j] > arreglo[i]) {
+                    var aux= 0;
+                    aux = arreglo[i];
+                    arreglo[i] = arreglo[j];
+                    arreglo[j] = aux;
+                }
+            }
+
+        }
+
+        console.log(arreglo[0]);
+        document.write(arreglo[0]);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
